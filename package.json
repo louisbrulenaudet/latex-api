@@ -1,0 +1,25 @@
+{
+  "name": "latex-api",
+  "version": "1.0.1",
+  "scripts": {
+    "check": "biome check --write .",
+    "check-types": "bunx tsc --noEmit",
+    "dev": "bun run --hot src/index.ts",
+    "format": "biome format --write .",
+    "lint": "biome lint --write ."
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.7.6",
+    "hono": "^4.12.3",
+    "unzipper": "^0.12.3",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.5",
+    "@types/bun": "latest",
+    "@types/unzipper": "^0.10.11",
+    "git-format-staged": "^4.0.1",
+    "husky": "^9.1.7",
+    "typescript": "^5.9.3"
+  }
+}

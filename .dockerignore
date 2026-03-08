@@ -1,0 +1,71 @@
+# Dependencies (reinstalled in image)
+node_modules
+
+# Git and repo metadata
+.git
+.github
+# Keep .gitignore so Biome can find it (vcs.useIgnoreFile in biome.json)
+
+# Env and secrets
+.env
+.env.template
+.env.local
+.env.*.local
+
+# IDE and editor config (not needed in image)
+.cursor
+.cursorignore
+.vscode
+.idea
+.editorconfig
+
+# Dev tooling and scripts (not needed in image)
+Makefile
+make
+Dockerfile*
+docker-compose*
+compose*
+.dockerignore
+
+# Docs and license (optional; reduces context)
+README.md
+LICENSE
+
+# Build outputs and cache
+dist/
+build/
+*.tsbuildinfo
+.tsbuildinfo
+.turbo/
+.cache/
+tmp/
+temp/
+
+# Package manager and runtime caches
+.npm/
+.bun/
+.pnpm-store/
+.yarn/
+.pnp.*
+
+# Logs and debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+bun-debug.log*
+
+# Testing and coverage
+coverage*
+.nyc_output/
+*.lcov
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Misc
+*.tgz
